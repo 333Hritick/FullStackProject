@@ -1,13 +1,13 @@
-backend/__pycache__/
-backend/*.pyc
-backend/venv/
-backend/*.sqlite3
-backend/.env
+solar backend/__pycache__/
+solar backend/*.pyc
+solar backend/venv/
+solar backend/*.sqlite3
+solar backend/.env
 
 
-frontend/node_modules/
-frontend/build/
-frontend/.env
+project solar/node_modules/
+project solar/build/
+project solar/.env
 
 
 .vscode/
