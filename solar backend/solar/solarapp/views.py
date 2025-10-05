@@ -23,7 +23,7 @@ def create_quote(request):
     serializer = QuoteRequestSerializer(data=request.data)
     
     if serializer.is_valid():
-        quote = serializer.save()  # <-- Save and get the instance
+        quote = serializer.save()  
 
         # Prepare Telegram message
         message = (
