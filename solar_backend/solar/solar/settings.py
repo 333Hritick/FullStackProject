@@ -62,6 +62,8 @@ MIDDLEWARE = [
     
 ]
 
+CORS_ALLOWED_ORIGINS=["https://solarfrontend.onrender.com/"]
+
 ROOT_URLCONF = 'solar.urls'
 
 TEMPLATES = [
@@ -139,7 +141,13 @@ USE_TZ = True
 STATIC_URL = 'static/'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 
+STATICFILES_DIRS = [
+    BASE_DIR / "frontend/build/static",
+]
+
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
